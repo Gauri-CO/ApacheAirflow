@@ -1,0 +1,25 @@
+[2021-08-06 10:09:54,195] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: marketvol_dag.DownloadTSLA 2021-08-06T14:09:30.936607+00:00 [queued]>
+[2021-08-06 10:09:54,199] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: marketvol_dag.DownloadTSLA 2021-08-06T14:09:30.936607+00:00 [queued]>
+[2021-08-06 10:09:54,199] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-06 10:09:54,200] {taskinstance.py:1088} INFO - Starting attempt 1 of 3
+[2021-08-06 10:09:54,200] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-06 10:09:54,207] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): DownloadTSLA> on 2021-08-06T14:09:30.936607+00:00
+[2021-08-06 10:09:54,220] {standard_task_runner.py:52} INFO - Started process 30764 to run task
+[2021-08-06 10:09:54,225] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'marketvol_dag', 'DownloadTSLA', '2021-08-06T14:09:30.936607+00:00', '--job-id', '295', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/airflowminiproject.py', '--cfg-path', '/tmp/tmp89bqocvz', '--error-file', '/tmp/tmpx914kh4x']
+[2021-08-06 10:09:54,229] {standard_task_runner.py:77} INFO - Job 295: Subtask DownloadTSLA
+[2021-08-06 10:09:54,251] {logging_mixin.py:104} INFO - Running <TaskInstance: marketvol_dag.DownloadTSLA 2021-08-06T14:09:30.936607+00:00 [running]> on host DESKTOP-QHDN1D5.localdomain
+[2021-08-06 10:09:54,271] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=marketvol_dag
+AIRFLOW_CTX_TASK_ID=DownloadTSLA
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-06T14:09:30.936607+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-08-06T14:09:30.936607+00:00
+[2021-08-06 10:09:54,580] {logging_mixin.py:104} INFO - [*********************100%***********************]  1 of 1 completed
+[2021-08-06 10:09:54,580] {logging_mixin.py:104} INFO - 
+[2021-08-06 10:09:54,580] {logging_mixin.py:104} INFO - Path is  /tmp/data/20210806/TSLAdata.csv
+[2021-08-06 10:09:54,584] {python.py:151} INFO - Done. Returned value was: None
+[2021-08-06 10:09:54,587] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=marketvol_dag, task_id=DownloadTSLA, execution_date=20210806T140930, start_date=20210806T140954, end_date=20210806T140954
+[2021-08-06 10:09:54,602] {taskinstance.py:1265} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-08-06 10:09:54,642] {local_task_job.py:149} INFO - Task exited with return code 0

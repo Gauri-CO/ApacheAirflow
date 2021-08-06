@@ -1,0 +1,28 @@
+[2021-08-06 10:10:34,503] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: marketvol_dag.QueryData 2021-08-06T14:09:30.936607+00:00 [queued]>
+[2021-08-06 10:10:34,507] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: marketvol_dag.QueryData 2021-08-06T14:09:30.936607+00:00 [queued]>
+[2021-08-06 10:10:34,508] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-06 10:10:34,508] {taskinstance.py:1088} INFO - Starting attempt 1 of 3
+[2021-08-06 10:10:34,508] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-06 10:10:34,518] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): QueryData> on 2021-08-06T14:09:30.936607+00:00
+[2021-08-06 10:10:34,531] {standard_task_runner.py:52} INFO - Started process 31080 to run task
+[2021-08-06 10:10:34,536] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'marketvol_dag', 'QueryData', '2021-08-06T14:09:30.936607+00:00', '--job-id', '317', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/airflowminiproject.py', '--cfg-path', '/tmp/tmpl9vtenvw', '--error-file', '/tmp/tmpxodlkqm5']
+[2021-08-06 10:10:34,539] {standard_task_runner.py:77} INFO - Job 317: Subtask QueryData
+[2021-08-06 10:10:34,563] {logging_mixin.py:104} INFO - Running <TaskInstance: marketvol_dag.QueryData 2021-08-06T14:09:30.936607+00:00 [running]> on host DESKTOP-QHDN1D5.localdomain
+[2021-08-06 10:10:34,584] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=marketvol_dag
+AIRFLOW_CTX_TASK_ID=QueryData
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-06T14:09:30.936607+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-08-06T14:09:30.936607+00:00
+[2021-08-06 10:10:34,599] {logging_mixin.py:104} INFO -       open       vol
+max  716.0  495831.0
+min  708.0       NaN
+[2021-08-06 10:10:34,604] {logging_mixin.py:104} INFO -       open       vol
+max  716.0  495831.0
+min  708.0       NaN
+[2021-08-06 10:10:34,604] {python.py:151} INFO - Done. Returned value was: None
+[2021-08-06 10:10:34,606] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=marketvol_dag, task_id=QueryData, execution_date=20210806T140930, start_date=20210806T141034, end_date=20210806T141034
+[2021-08-06 10:10:34,616] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-08-06 10:10:34,629] {local_task_job.py:149} INFO - Task exited with return code 0
