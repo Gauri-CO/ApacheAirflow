@@ -76,7 +76,7 @@ t4 = BashOperator(
 
 t5 = PythonOperator(
     task_id='QueryData',
-    python_callable=download_market_data,
+    python_callable=query_data,
     dag=dag
 )
 
