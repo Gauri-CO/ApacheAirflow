@@ -1,5 +1,5 @@
 # ApacheAirflow
-Apache AirFlow Mini Project
+**Apache AirFlow Mini Project--Part1 **
 
 1. Create the Airflow DAG
 Create the DAG object with name “marketvol”. Set the default arguments. Your DAG run should
@@ -48,5 +48,19 @@ movedir_AAPL.sh (t4)
 
 ![image](https://user-images.githubusercontent.com/75573079/128521382-ad1139dc-1ec9-4b74-a016-cf1e953f2aa4.png)
 
+
+
+**Apache AirFlow Mini Project 2 (Log Analyzer)**
+
+Python script to process the Airflow Logs and identify the Error messages.
+Log analyzer should show the following information:
+- The total count of error messages
+- A detailed message regarding each error
+
+Usage:
+python LogParser.py
+Specify the location of Airflow log directory
+
+![image](https://user-images.githubusercontent.com/75573079/128536421-6fdba443-6b24-4d08-9695-44abe54b17fa.png)
 
 
